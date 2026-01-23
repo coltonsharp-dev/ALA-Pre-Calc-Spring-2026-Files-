@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APQ Slides</title>
+
+  <!-- Reveal core -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/white.css">
+
+  <style>
+    :root { --r-main-font-size: 40px; }
+    .reveal blockquote {
+      width: 100%;
+      padding: 0.6em 0.9em;
+      border-left: 8px solid #3b82f6;
+      background: #f8fafc;
+    }
+    .reveal li { margin: 0.25em 0; }
+    .reveal .katex { font-size: 1.05em; }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section
+        data-markdown="slides.md"
+        data-separator="^\n---\n$">
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/math/math.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: "fade",
+      plugins: [ RevealMarkdown, RevealMath.KaTeX ],
+      katex: {
+        delimiters: [{ left: "$$", right: "$$", display: true }]
+      }
+    });
+  </script>
+</body>
+</html>
